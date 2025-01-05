@@ -86,7 +86,7 @@ def animated_text(message):
 # Accueil
 if selected_page == "Accueil":
     st.markdown("<h1 class='main-header'>🌿 Bienvenue à notre Application Streamlit 🦺🌸🦺</h1>", unsafe_allow_html=True)
-    st.image("C:/Users/MWAMI/Downloads/A6.jpg", caption="La beauté de la nature", use_column_width=True)
+    st.image("A6.jpg", caption="La beauté de la nature", use_column_width=True)
     st.write("Explorez notre application à travers les différentes pages en utilisant le menu à gauche 👈.")
     animated_text("Commencez votre exploration maintenant !")
 
@@ -94,7 +94,7 @@ if selected_page == "Accueil":
 elif selected_page == "Page 1 : Découverte":
     st.header("🌍 Découvrez un monde inspirant")
     st.write("Découvrez des paysages magnifiques et des informations enrichissantes sur la nature.")
-    st.image("C:/Users/MWAMI/Downloads/chien.jpg")
+    st.image("chien.jpg")
     st.write("La nature est un livre ouvert rempli d'aventures et de mystères. Cherchez, apprenez, découvrez.")
 
 # Page 2 : Services
