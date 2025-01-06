@@ -74,9 +74,6 @@ set_css()
 
 # Sidebar Navigation
 st.sidebar.title("Menu")
- mon_chemin_relatif = "A1.jpg"
-    mon_chemin_absolu = os.path.abspath(mon_chemin_relatif)
-    st.image(mon_chemin_absolu)
 pages = ["Accueil", "Page 1 : Découverte", "Page 2 : Services", "Page 3 : Ressources", "À Propos"]
 selected_page = st.sidebar.radio("Navigation", pages)
 
