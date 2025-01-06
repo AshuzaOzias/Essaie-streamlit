@@ -74,6 +74,9 @@ set_css()
 
 # Sidebar Navigation
 st.sidebar.title("Menu")
+ mon_chemin_relatif = "A1.jpg"
+    mon_chemin_absolu = os.path.abspath(mon_chemin_relatif)
+    st.image(mon_chemin_absolu)
 pages = ["Accueil", "Page 1 : Découverte", "Page 2 : Services", "Page 3 : Ressources", "À Propos"]
 selected_page = st.sidebar.radio("Navigation", pages)
 
@@ -108,7 +111,9 @@ elif selected_page == "Page 2 : Services":
     services = ["Des visites guidées", "Des ateliers éducatifs", "Des programmes interactifs"]
     for service in services:
         st.subheader(f"✔️ {service}")
-    st.image("https://source.unsplash.com/800x600/?tourism,education")
+     mon_chemin_relatif = "F1.jpg"
+    mon_chemin_absolu = os.path.abspath(mon_chemin_relatif)
+    st.image(mon_chemin_absolu)
 
 # Page 3 : Ressources
 elif selected_page == "Page 3 : Ressources":
@@ -121,7 +126,9 @@ elif selected_page == "Page 3 : Ressources":
     }
     for name, url in links.items():
         st.markdown(f"[{name}]({url})", unsafe_allow_html=True)
-
+     mon_chemin_relatif = "PHOTO13.jpeg"
+    mon_chemin_absolu = os.path.abspath(mon_chemin_relatif)
+    st.image(mon_chemin_absolu)
 # Page 4 : À Propos des Créateurs
 elif selected_page == "À Propos":
     st.header("👨‍💻 À Propos des Créateurs🦺")
@@ -159,8 +166,7 @@ elif selected_page == "À Propos":
         st.write(f"📧 [Email]({creator['email']})")
         st.write(
             "🔗 Réseaux : "
-            f"[LinkedIn]({creator['linkedin']}) | "
-            f"[Twitter]({creator['twitter']})"
+            
         )
 
         # Contenu des liens des médias sociaux
